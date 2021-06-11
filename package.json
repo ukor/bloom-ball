@@ -3,20 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "repository": {
-        "type": "git",
-        "url": "git+https://github.com/ukor/bloom-ball.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/ukor/bloom-ball/issues"
-    },
-    "homepage": "https://github.com/ukor/bloom-ball#readme",
+    "type": "git",
+    "url": "git+https://github.com/ukor/bloom-ball.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ukor/bloom-ball/issues"
+  },
+  "homepage": "https://github.com/ukor/bloom-ball#readme",
   "dependencies": {
     "@chakra-ui/react": "^1.6.3",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
+    "@openzeppelin/contracts": "^4.1.0",
     "@testing-library/jest-dom": "^5.14.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -38,6 +39,7 @@
     "test": "react-scripts test",
     "test:contract": "npx hardhat test",
     "prepare": "husky install",
+    "compile": "npx hardhat compile",
     "solhint": "./node_modules/.bin/solhint -f table contracts/**/*.sol",
     "solhint:fix": "./node_modules/.bin/solhint contracts/**/*.sol --fix",
     "eslint:fix": "./node_modules/eslint/bin/eslint.js --fix",
@@ -64,11 +66,9 @@
   },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
     "chai": "^4.3.4",
-    "ethereum-waffle": "^3.3.0",
-    "ethers": "^5.3.1",
-    "hardhat": "^2.3.2",
     "eslint": "^7.24.0",
     "eslint-config-prettier": "^8.2.0",
     "eslint-config-standard": "^16.0.2",
@@ -76,11 +76,14 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-react": "^7.23.2",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.3.1",
+    "hardhat": "^2.3.2",
     "husky": "^6.0.0",
-    "pretty-quick": "^3.1.0",
-    "prettier": "^2.3.0",
     "nodemon": "^2.0.7",
+    "prettier": "^2.3.0",
     "prettier-plugin-solidity": "^1.0.0-beta.10",
+    "pretty-quick": "^3.1.0",
     "solhint": "^3.3.4",
     "solhint-plugin-prettier": "0.0.5"
   }
