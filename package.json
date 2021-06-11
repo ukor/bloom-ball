@@ -2,20 +2,47 @@
   "name": "bloom-ball",
   "version": "0.1.0",
   "private": true,
+  "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ukor/bloom-ball.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ukor/bloom-ball/issues"
+    },
+    "homepage": "https://github.com/ukor/bloom-ball#readme",
   "dependencies": {
+    "@chakra-ui/react": "^1.6.3",
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
     "@testing-library/jest-dom": "^5.14.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "classnames": "^2.3.1",
+    "framer-motion": "^4.1.17",
+    "normalize.css": "^8.0.1",
+    "numeral": "^2.0.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "react-spinners": "^0.11.0",
+    "styled-components": "^5.3.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test:contract": "npx hardhat test",
+    "prepare": "husky install",
+    "solhint": "./node_modules/.bin/solhint -f table contracts/**/*.sol",
+    "solhint:fix": "./node_modules/.bin/solhint contracts/**/*.sol --fix",
+    "eslint:fix": "./node_modules/eslint/bin/eslint.js --fix",
+    "prettier:fix": "./node_modules/pretty-quick/bin/pretty-quick.js --staged",
+    "prettier:solidity": "./node_modules/.bin/prettier --write contracts/**/*.sol"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +61,27 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.3.1",
+    "hardhat": "^2.3.2",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-react": "^7.23.2",
+    "husky": "^6.0.0",
+    "pretty-quick": "^3.1.0",
+    "prettier": "^2.3.0",
+    "nodemon": "^2.0.7",
+    "prettier-plugin-solidity": "^1.0.0-beta.10",
+    "solhint": "^3.3.4",
+    "solhint-plugin-prettier": "0.0.5"
   }
 }
