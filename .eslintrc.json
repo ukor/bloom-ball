@@ -15,7 +15,7 @@
   "plugins": ["react"],
   "rules": {
     // we only want single quotes
-    "quotes": ["error", "single"],
+    "quotes": ["error", "double"],
     // we want to force semicolons
     "semi": ["error", "always"],
     // we use 2 spaces to indent our code
@@ -29,7 +29,7 @@
         "objects": "always",
         "imports": "never",
         "exports": "never",
-        "functions": "only-multiline"
+        "functions": "never"
       }
     ]
   }
