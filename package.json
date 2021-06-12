@@ -12,7 +12,6 @@
   "bugs": {
     "url": "https://github.com/ukor/bloom-ball/issues"
   },
-  "homepage": "https://github.com/ukor/bloom-ball#readme",
   "dependencies": {
     "@chakra-ui/react": "^1.6.3",
     "@emotion/react": "^11.4.0",
@@ -34,7 +33,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=9001 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:contract": "npx hardhat test",
