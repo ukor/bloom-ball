@@ -15,7 +15,7 @@ function LandingPage() {
     <LandingPageWrapper>
       <Flex bgColor="black" width="100vw" height="100vh" align="center" justify="center">
         <Box>
-          <Heading color="gray.500" Heading as="h1" size="4xl">
+          <Heading color="gray.500" as="h1" size="4xl">
             Bloom Ball
           </Heading>
           <Box paddingY="2" align="center">
