@@ -11,6 +11,7 @@ const FormWrapper = styled.div`
     z-index: 9;
     border: 1px solid orange;
     border-radius: 50px;
+    font-size: 3rem;
   }
 `;
 
@@ -33,7 +34,7 @@ function PrivateSellForm() {
         </InputGroup>
       </Box>
       <Box marginTop="-5" bg="#141414" align="right" marginRight="10">
-        <CgArrowsExchangeAltV className="icon" fontSize="50" color="white" />
+        <CgArrowsExchangeAltV className="icon" color="white" />
       </Box>
       <Box marginTop="-5" opacity="2" bg="#141414">
         <InputGroup colorScheme="orange" _focus={{ borderColor: "orange" }} size="lg" bg="inherit">

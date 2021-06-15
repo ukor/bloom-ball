@@ -4,6 +4,8 @@ import styled from "styled-components";
 import { Flex, Box, Button, Heading, Link, useMediaQuery } from "@chakra-ui/react";
 import { BiMenuAltRight } from "react-icons/bi";
 
+import { OUTTER_SPACE } from "../../shared";
+
 const TopNavigationWrapper = styled.header`
   color: #fff;
 `;
@@ -11,27 +13,30 @@ const TopNavigationWrapper = styled.header`
 const links = [
   {
     label: "Tokenocomics",
+    ref: "tokenocomics",
   },
   {
     label: "Road Map",
+    ref: "roadMap",
   },
   {
     label: "FAQ",
+    ref: "faq",
   },
   {
     label: "How to buy",
+    ref: "howToBuy",
   },
 ];
 
 function Header() {
-  const PADDING_TOP = 10;
-  const OUTTER_SPACE = { base: 10, sm: 2, md: 10, lg: 24, xl: 32 };
+  const PADDING_TOP = { base: 3, lg: 5 };
   const [isLargeScreen] = useMediaQuery("(min-width:  48em)");
   return (
     <TopNavigationWrapper>
       <Flex bgColor="black" width="full" align="space-evenly" justify="flex-start">
         <Box flex="1" marginLeft={OUTTER_SPACE} paddingY={PADDING_TOP}>
-          <Heading color="gray.500" as="h1" size="md">
+          <Heading color="gray.500" as="h1" size="lg">
             Bloom Ball
           </Heading>
         </Box>
@@ -58,7 +63,7 @@ function HeaderLinks({ links }) {
   ));
 
   return (
-    <Flex width="100%" align="space-around" justify="center">
+    <Flex height="max" width="100%" align="center" justify="center">
       {navLinks}
     </Flex>
   );
@@ -88,7 +93,7 @@ function ActionButton({ isLargeScreen, paddingTop, outterSpace }) {
 
 ActionButton.propTypes = {
   isLargeScreen: PropTypes.bool.isRequired,
-  paddingTop: PropTypes.number.isRequired,
+  paddingTop: PropTypes.object.isRequired,
   outterSpace: PropTypes.object.isRequired,
 };
 
