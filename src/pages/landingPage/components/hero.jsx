@@ -7,12 +7,12 @@ import PrivateSellCard from "./privateSellCard";
 function Hero() {
   const [isLargeScreen] = useMediaQuery("(min-width:  48em)");
   return (
-    <Box>
+    <Box marginY={{ base: 20, lg: 32 }}>
       <Flex
         direction={isLargeScreen ? "row" : "column"}
         bgColor="black"
         width="100%"
-        height="50vh"
+        height={{ base: "50vh", lg: "50vh" }}
         align="center"
         justify="center"
       >
