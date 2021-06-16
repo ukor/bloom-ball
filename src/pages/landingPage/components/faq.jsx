@@ -12,7 +12,7 @@ import {
   Heading,
   Divider,
   SlideFade,
-  useMediaQuery,
+  useMediaQuery
 } from "@chakra-ui/react";
 
 import { OUTTER_SPACE } from "../../../shared";
@@ -24,24 +24,24 @@ const dummyText =
 const FAQS = [
   {
     question: "Is there a private sell",
-    answer: dummyText,
+    answer: dummyText
   },
   {
     question: "What kind of marketing will be done for Bloom Ball",
-    answer: dummyText,
+    answer: dummyText
   },
   {
     question: "Another FAQ",
-    answer: dummyText,
+    answer: dummyText
   },
   {
     question: "What kind of marketing will be done for Bloom Ball 1",
-    answer: dummyText,
+    answer: dummyText
   },
   {
     question: "Another FAQ 1",
-    answer: dummyText,
-  },
+    answer: dummyText
+  }
 ];
 
 function FAQSection() {

@@ -4,7 +4,7 @@
     // "commonjs": true,
     "es2021": true
   },
-  "extends": ["plugin:react/recommended"],
+  "extends": ["plugin:react/recommended", "prettier"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -22,6 +22,7 @@
     "indent": ["error", 2],
     // we want to avoid useless spaces
     "no-multi-spaces": ["error"],
+    // disable: because of conflict with prettier
     "comma-dangle": ["error", "never"]
   }
 }

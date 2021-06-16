@@ -46,6 +46,7 @@
     "solhint:fix": "./node_modules/.bin/solhint contracts/**/*.sol --fix",
     "eslint:fix": "./node_modules/eslint/bin/eslint.js --fix",
     "prettier:fix": "./node_modules/pretty-quick/bin/pretty-quick.js --staged",
+    "prettier": "./node_modules/.bin/prettier --write ./src",
     "prettier:solidity": "./node_modules/.bin/prettier --write contracts/**/*.sol"
   },
   "eslintConfig": {
