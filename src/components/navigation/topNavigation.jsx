@@ -56,7 +56,7 @@ function Header() {
 function HeaderLinks({ links }) {
   const navLinks = links.map((link) => (
     <Box paddingX={{ base: 3, lg: 5 }} key={link.label}>
-      <Link color="white" to="#">
+      <Link textAlign="center" _hover={{ color: "orange", textDecoration: "none" }} fontSize="17" color="white" to="#">
         {link.label}
       </Link>
     </Box>
