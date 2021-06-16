@@ -13,20 +13,20 @@ const TopNavigationWrapper = styled.header`
 const links = [
   {
     label: "Tokenocomics",
-    ref: "tokenocomics",
+    ref: "tokenocomics"
   },
   {
     label: "Road Map",
-    ref: "roadMap",
+    ref: "roadMap"
   },
   {
     label: "FAQ",
-    ref: "faq",
+    ref: "faq"
   },
   {
     label: "How to buy",
-    ref: "howToBuy",
-  },
+    ref: "howToBuy"
+  }
 ];
 
 function Header() {
@@ -70,7 +70,7 @@ function HeaderLinks({ links }) {
 }
 
 HeaderLinks.propTypes = {
-  links: PropTypes.array.isRequired,
+  links: PropTypes.array.isRequired
 };
 
 function ActionButton({ isLargeScreen, paddingTop, outterSpace }) {
@@ -94,7 +94,7 @@ function ActionButton({ isLargeScreen, paddingTop, outterSpace }) {
 ActionButton.propTypes = {
   isLargeScreen: PropTypes.bool.isRequired,
   paddingTop: PropTypes.object.isRequired,
-  outterSpace: PropTypes.object.isRequired,
+  outterSpace: PropTypes.object.isRequired
 };
 
 export default Header;

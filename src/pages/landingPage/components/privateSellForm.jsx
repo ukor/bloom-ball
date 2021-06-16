@@ -50,7 +50,7 @@ function PrivateSellForm() {
         title: "Invalid Input",
         description: "Input must be a number",
         status: "info",
-        duration: 9000,
+        duration: 9000
       });
       return;
     }
@@ -60,7 +60,7 @@ function PrivateSellForm() {
         description: "Amount is too low. Amount should not be less then 0.1BNB.",
         status: "info",
         duration: 9000,
-        variant: "solid",
+        variant: "solid"
       });
       return;
     }
@@ -70,7 +70,7 @@ function PrivateSellForm() {
         description: "Amount is too high. Amount should not be more then 30BNB.",
         status: "info",
         duration: 9000,
-        variant: "solid",
+        variant: "solid"
       });
       return;
     }
